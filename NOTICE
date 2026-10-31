@@ -1,0 +1,16 @@
+Python skills
+Copyright 2026 MOZGII, Inc. (https://mozgii.com/)
+
+Every text in this library is written by MOZGII. The sources below were read as context for facts; nothing was copied from them.
+
+- Astral Software Inc., https://github.com/astral-sh/claude-code-plugins at f3ce88a7ba830f53afd6d944c1d0278ed318e142, MIT OR Apache-2.0
+- Astral Software Inc., https://github.com/astral-sh/ty at 48c5ea1baf6144dc9918ae60040aaa4198b251ce, MIT
+- Astral Software Inc., https://github.com/astral-sh/ruff at 16cffe4a80bb37cfb3135fcef3717e41709593e4, MIT
+- Pydantic Services Inc. and contributors, https://github.com/pydantic/skills at 98f591c0886eb11df0bdd57804419e11439efc93, MIT
+- Sebastián Ramírez, https://github.com/fastapi/typer at a5882dedf0bc7a46cd861fdfca020f88519e0f21, MIT
+- Jukka Lehtosalo and the mypy contributors, https://github.com/python/mypy at 40da37197b84e3692d55c1d2ffbc3b5c3301afd9, MIT
+- Anthropic, https://github.com/anthropics/skills at ca45fc496a3436251f191354091d557da31c15b5, Apache-2.0
+- Vincent Driessen and the RQ contributors, https://github.com/rq/rq at 1cf2c3eab33a8eda95c6107720dc40c7e285dd2b, BSD-2-Clause
+- The prek contributors, https://github.com/j178/prek at 8fe6b5b743e13e9986f76b930af4246bab9b072e, MIT
+- The tox contributors, https://github.com/tox-dev/tox at 07746dd85fcc68220a6e93c0a56f0b3a6782881f, MIT
+- Zensical contributors, https://github.com/zensical/zensical at 5cf99cf2e27e048ad31b90264516a1655976735e, MIT

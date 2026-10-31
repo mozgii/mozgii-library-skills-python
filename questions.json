@@ -1,0 +1,1227 @@
+[
+  {
+    "question": "How do I make CI fail when someone edits pyproject.toml but forgets to update the lockfile?",
+    "answer": "uv lock --check",
+    "file": "v3.15/tooling/uv-projects/SKILL.md"
+  },
+  {
+    "question": "uv sync removed a package I had installed with pip, why did that happen?",
+    "answer": "sync is exact",
+    "file": "v3.15/tooling/uv-projects/SKILL.md"
+  },
+  {
+    "question": "How can a single Python script declare its own dependencies without creating a project?",
+    "answer": "PEP 723",
+    "file": "v3.15/tooling/uv-projects/references/scripts-and-tools.md"
+  },
+  {
+    "question": "How do I stop Docker from reinstalling all Python dependencies every time my code changes?",
+    "answer": "--no-install-project",
+    "file": "v3.15/tooling/uv-projects/references/ci-and-docker.md"
+  },
+  {
+    "question": "How do I upload my package to PyPI from GitHub Actions without storing an API token?",
+    "answer": "trusted publishing",
+    "file": "v3.15/tooling/python-packaging/SKILL.md"
+  },
+  {
+    "question": "My JSON data file is missing or not found after installing my package from the wheel",
+    "answer": "importlib.resources",
+    "file": "v3.15/tooling/python-packaging/SKILL.md"
+  },
+  {
+    "question": "Should my library put upper version limits on its dependencies?",
+    "answer": "Avoid upper caps",
+    "file": "v3.15/tooling/python-packaging/SKILL.md"
+  },
+  {
+    "question": "After upgrading Ruff I suddenly get hundreds of new lint errors",
+    "answer": "grew about sevenfold",
+    "file": "v3.15/tooling/ruff/SKILL.md"
+  },
+  {
+    "question": "Ruff keeps reformatting the code examples in my README, how do I stop it?",
+    "answer": "Markdown code blocks",
+    "file": "v3.15/tooling/ruff/SKILL.md"
+  },
+  {
+    "question": "Which Ruff rules catch shell=True, pickle and hard-coded passwords?",
+    "answer": "flake8-bandit",
+    "file": "v3.15/tooling/ruff/references/rule-sets.md"
+  },
+  {
+    "question": "How do I type a decorator so the wrapped function keeps its parameter types?",
+    "answer": "ParamSpec",
+    "file": "v3.15/language/python-typing/SKILL.md"
+  },
+  {
+    "question": "Why does the type checker refuse a list[int] where my function takes list[float]?",
+    "answer": "invariant",
+    "file": "v3.15/language/python-typing/SKILL.md"
+  },
+  {
+    "question": "mypy now says 'Need type annotation' for an empty list that passed before the upgrade",
+    "answer": "local_partial_types",
+    "file": "v3.15/language/python-typing/references/mypy.md"
+  },
+  {
+    "question": "Pyright reports every third-party import as missing although the packages are in .venv",
+    "answer": "venvPath",
+    "file": "v3.15/tooling/pyright-strict/SKILL.md"
+  },
+  {
+    "question": "Why doesn't strict mode complain about the result of json.load?",
+    "answer": "Any versus Unknown",
+    "file": "v3.15/tooling/pyright-strict/SKILL.md"
+  },
+  {
+    "question": "I have hundreds of reportUnknownMemberType errors across many files, where should I start fixing?",
+    "answer": "map the chain top-down",
+    "file": "v3.15/tooling/pyright-strict/references/cascading-errors.md"
+  },
+  {
+    "question": "Is there a script that groups pyright's JSON output by rule and file?",
+    "answer": "pyright_summary.py",
+    "file": "v3.15/tooling/pyright-strict/SKILL.md"
+  },
+  {
+    "question": "My async test functions fail with 'async def functions are not natively supported'",
+    "answer": "asyncio_mode",
+    "file": "v3.15/quality/pytest-testing/SKILL.md"
+  },
+  {
+    "question": "How do I clean up a resource a pytest fixture created, even when the test fails?",
+    "answer": "code after `yield` is the teardown",
+    "file": "v3.15/quality/pytest-testing/references/fixtures-and-mocking.md"
+  },
+  {
+    "question": "I patched a function with mock.patch but the real one still runs",
+    "answer": "where it is looked up",
+    "file": "v3.15/quality/pytest-testing/SKILL.md"
+  },
+  {
+    "question": "Generate random test inputs and get the smallest input that breaks my function",
+    "answer": "shrinks the input to the smallest failing example",
+    "file": "v3.15/quality/pytest-testing/references/property-based-testing.md"
+  },
+  {
+    "question": "Fail the CI run when branch coverage drops below 85 percent",
+    "answer": "fail_under",
+    "file": "v3.15/quality/pytest-testing/references/async-and-coverage.md"
+  },
+  {
+    "question": "Run a thousand HTTP requests concurrently but only ten at a time",
+    "answer": "Semaphore",
+    "file": "v3.15/services/python-asyncio/SKILL.md"
+  },
+  {
+    "question": "A task I started with asyncio.create_task sometimes just disappears",
+    "answer": "weak reference",
+    "file": "v3.15/services/python-asyncio/SKILL.md"
+  },
+  {
+    "question": "How do I retry a flaky async call with exponential backoff?",
+    "answer": "full jitter",
+    "file": "v3.15/services/python-asyncio/references/patterns.md"
+  },
+  {
+    "question": "After configuring logging, messages from my modules are not printed at all",
+    "answer": "disable_existing_loggers",
+    "file": "v3.15/standard-library/python-logging/SKILL.md"
+  },
+  {
+    "question": "How can every log line carry the current request id without passing it around?",
+    "answer": "RequestIdFilter",
+    "file": "v3.15/standard-library/python-logging/SKILL.md"
+  },
+  {
+    "question": "Produce JSON log output with structlog in production",
+    "answer": "JSONRenderer",
+    "file": "v3.15/standard-library/python-logging/references/structlog.md"
+  },
+  {
+    "question": "My command-line tool prints a traceback when its output is piped into head",
+    "answer": "BrokenPipeError",
+    "file": "v3.15/services/python-cli/SKILL.md"
+  },
+  {
+    "question": "argparse, Typer or Click: which should I use for a new tool?",
+    "answer": "Choose a library",
+    "file": "v3.15/services/python-cli/SKILL.md"
+  },
+  {
+    "question": "How do I write tests for a Typer command?",
+    "answer": "CliRunner",
+    "file": "v3.15/services/python-cli/references/typer-and-click.md"
+  },
+  {
+    "question": "Which function makes my script slow, and how do I find out on Python 3.15?",
+    "answer": "profiling.sampling",
+    "file": "v3.15/quality/python-performance/SKILL.md"
+  },
+  {
+    "question": "My long-running Python service keeps growing in memory, how do I find the leak?",
+    "answer": "compare_to",
+    "file": "v3.15/quality/python-performance/references/profilers.md"
+  },
+  {
+    "question": "Should I use a dataclass or a pydantic model for my classes?",
+    "answer": "Choose the kind",
+    "file": "v3.15/language/python-data-models/SKILL.md"
+  },
+  {
+    "question": "Load configuration from environment variables with validation and hidden secrets",
+    "answer": "pydantic-settings",
+    "file": "v3.15/language/python-data-models/SKILL.md"
+  },
+  {
+    "question": "What replaced .dict() and parse_obj after moving to pydantic 2?",
+    "answer": "model_dump",
+    "file": "v3.15/language/python-data-models/references/pydantic.md"
+  },
+  {
+    "question": "My program hangs forever while reading a child process's stdout and stderr",
+    "answer": "communicate()",
+    "file": "v3.15/standard-library/python-subprocess/SKILL.md"
+  },
+  {
+    "question": "The timeout killed my command but its child processes keep running",
+    "answer": "killpg",
+    "file": "v3.15/standard-library/python-subprocess/SKILL.md"
+  },
+  {
+    "question": "How do I use all CPU cores for a pure-Python computation?",
+    "answer": "ProcessPoolExecutor",
+    "file": "v3.15/services/python-concurrency/SKILL.md"
+  },
+  {
+    "question": "My desktop app should keep a Python model loaded and call it many times without HTTP",
+    "answer": "keeps warm",
+    "file": "v3.15/services/python-stdio-worker/SKILL.md"
+  },
+  {
+    "question": "A third-party library's print breaks the JSON messages my worker sends on stdout",
+    "answer": "claim_stdio",
+    "file": "v3.15/services/python-stdio-worker/SKILL.md"
+  },
+  {
+    "question": "Ship Python with my app so nothing is downloaded on the user's machine",
+    "answer": "relocatable CPython",
+    "file": "v3.15/services/python-stdio-worker/references/packaging.md"
+  },
+  {
+    "question": "Which error codes may the worker send back to the host?",
+    "answer": "-32800",
+    "file": "v3.15/services/python-stdio-worker/references/protocol.md"
+  },
+  {
+    "question": "Install PyTorch with GPU support on a Linux machine whose driver reports CUDA 13.0",
+    "answer": "cu130",
+    "file": "v3.15/data-and-ai/python-ml-packages/SKILL.md"
+  },
+  {
+    "question": "Importing MLX fails on my new Apple silicon Mac",
+    "answer": "Rosetta",
+    "file": "v3.15/data-and-ai/python-ml-packages/SKILL.md"
+  },
+  {
+    "question": "Is it safe to load a model file someone sent me with torch.load?",
+    "answer": "weights_only=True",
+    "file": "v3.15/quality/python-security/SKILL.md"
+  },
+  {
+    "question": "What should I use to hash user passwords?",
+    "answer": "Argon2id",
+    "file": "v3.15/quality/python-security/SKILL.md"
+  },
+  {
+    "question": "Users upload tar archives; how do I extract them without files landing outside the folder?",
+    "answer": "filter=\"data\"",
+    "file": "v3.15/quality/python-security/SKILL.md"
+  },
+  {
+    "question": "A user gives my server a URL to fetch; how do I stop it from reaching internal addresses?",
+    "answer": "is_global",
+    "file": "v3.15/quality/python-security/references/secure-coding.md"
+  },
+  {
+    "question": "Attach a debugger to a Python process that is already running and stuck",
+    "answer": "python -m pdb -p",
+    "file": "v3.15/quality/python-debugging/SKILL.md"
+  },
+  {
+    "question": "My program crashes with a segmentation fault and prints no traceback",
+    "answer": "faulthandler",
+    "file": "v3.15/quality/python-debugging/SKILL.md"
+  },
+  {
+    "question": "I get ModuleNotFoundError although the package is installed",
+    "answer": "sys.executable",
+    "file": "v3.15/quality/python-debugging/SKILL.md"
+  },
+  {
+    "question": "Pyright shows the same reportUnknownMemberType error in 30 files after I added one helper module; what do I fix first?",
+    "answer": "fix the root first",
+    "file": "v3.15/tooling/pyright-strict/SKILL.md"
+  },
+  {
+    "question": "My Python worker should free GPU memory when nobody has called it for a while",
+    "answer": "--idle-release-s",
+    "file": "v3.15/services/python-stdio-worker/references/warm-and-concurrency.md"
+  },
+  {
+    "question": "How does the Python worker get database credentials without a password in its environment?",
+    "answer": "passfile",
+    "file": "v3.15/services/python-stdio-worker/references/database.md"
+  },
+  {
+    "question": "How do I unit test one worker method without starting the process and its pipes?",
+    "answer": "Unit tests without the transport",
+    "file": "v3.15/services/python-stdio-worker/references/testing.md"
+  },
+  {
+    "question": "What should the worker do with its child processes when it is told to stop?",
+    "answer": "Stop paths, signals and children",
+    "file": "v3.15/services/python-stdio-worker/references/runtime.md"
+  },
+  {
+    "question": "datetime.utcnow() is deprecated; what do I call to get the current time instead?",
+    "answer": "datetime.now(UTC)",
+    "file": "v3.15/standard-library/python-datetime/SKILL.md"
+  },
+  {
+    "question": "I added 24 hours to a datetime in Paris on the night the clocks change and got the wrong time",
+    "answer": "adds wall-clock time, not elapsed time",
+    "file": "v3.15/standard-library/python-datetime/SKILL.md"
+  },
+  {
+    "question": "How do I freeze the clock in a pytest test so it does not depend on today's date?",
+    "answer": "time_machine.travel",
+    "file": "v3.15/standard-library/python-datetime/SKILL.md"
+  },
+  {
+    "question": "How do I raise my own exception but keep the original error in the traceback?",
+    "answer": "raise NewError(...) from exc",
+    "file": "v3.15/language/python-error-handling/SKILL.md"
+  },
+  {
+    "question": "My except ValueError does not catch errors coming out of an asyncio TaskGroup",
+    "answer": "except*",
+    "file": "v3.15/language/python-error-handling/SKILL.md"
+  },
+  {
+    "question": "How should I retry a flaky API call without hammering the server during an outage?",
+    "answer": "Backoff with jitter",
+    "file": "v3.15/language/python-error-handling/SKILL.md"
+  },
+  {
+    "question": "Is it safe to retry a payment POST request after a timeout?",
+    "answer": "idempotency key",
+    "file": "v3.15/language/python-error-handling/references/retries-and-resilience.md"
+  },
+  {
+    "question": "My ProcessPoolExecutor workers fail with pickling errors on Linux since we moved to Python 3.14",
+    "answer": "forkserver",
+    "file": "v3.15/tooling/python-version-upgrade/SKILL.md"
+  },
+  {
+    "question": "Old text files give UnicodeDecodeError on Windows after upgrading to Python 3.15",
+    "answer": "PEP 686",
+    "file": "v3.15/tooling/python-version-upgrade/SKILL.md"
+  },
+  {
+    "question": "Which standard library modules were deleted in Python 3.13 and what replaces cgi or telnetlib?",
+    "answer": "dead batteries",
+    "file": "v3.15/tooling/python-version-upgrade/references/changes-by-version.md"
+  },
+  {
+    "question": "Why does my function keep items from earlier calls in its default list?",
+    "answer": "mutable default argument",
+    "file": "v3.15/language/python-idioms/SKILL.md"
+  },
+  {
+    "question": "All the lambdas I create in a for loop return the last value",
+    "answer": "late binding",
+    "file": "v3.15/language/python-idioms/SKILL.md"
+  },
+  {
+    "question": "Two of my modules import each other and Python crashes on import; how do I untangle them?",
+    "answer": "import cycle",
+    "file": "v3.15/language/python-code-design/SKILL.md"
+  },
+  {
+    "question": "How can CI stop anyone from importing the database layer inside the domain models?",
+    "answer": "import-linter",
+    "file": "v3.15/language/python-code-design/SKILL.md"
+  },
+  {
+    "question": "My script hangs forever on a single requests.get call",
+    "answer": "no default at all",
+    "file": "v3.15/services/python-http-clients/SKILL.md"
+  },
+  {
+    "question": "CERTIFICATE_VERIFY_FAILED when calling an API from the office network",
+    "answer": "truststore",
+    "file": "v3.15/services/python-http-clients/SKILL.md"
+  },
+  {
+    "question": "How do I test my API client code without making real network calls?",
+    "answer": "MockTransport",
+    "file": "v3.15/services/python-http-clients/SKILL.md"
+  },
+  {
+    "question": "I added an __eq__ method and now my objects can't be put in a set anymore. Why?",
+    "answer": "Defining `__eq__` alone sets `__hash__` to `None`",
+    "file": "v3.15/language/python-object-model/SKILL.md"
+  },
+  {
+    "question": "How can subclasses register themselves in a plugin registry without writing a metaclass?",
+    "answer": "`__init_subclass__` runs on the parent each time a subclass is defined",
+    "file": "v3.15/language/python-object-model/SKILL.md"
+  },
+  {
+    "question": "Why can I replace a method on a single instance in a test but assigning over a property fails?",
+    "answer": "the instance dict shadows a non-data descriptor",
+    "file": "v3.15/language/python-object-model/references/descriptors.md"
+  },
+  {
+    "question": "How do I make sum() work on a list of my Money objects?",
+    "answer": "`sum()` starts from `0`, so `__radd__` must accept `0`",
+    "file": "v3.15/language/python-object-model/references/special-methods.md"
+  },
+  {
+    "question": "My timing decorator on an async def function always reports almost zero seconds",
+    "answer": "A plain synchronous wrapper around an `async def` function returns the coroutine without awaiting it",
+    "file": "v3.15/language/python-decorators/SKILL.md"
+  },
+  {
+    "question": "When I put two decorators on one function, which one runs first?",
+    "answer": "Stacked decorators apply from the bottom up and run from the top down",
+    "file": "v3.15/language/python-decorators/SKILL.md"
+  },
+  {
+    "question": "How do I write a decorator that can be used both with and without parentheses?",
+    "answer": "A decorator that works both bare (`@traced`) and with keyword arguments",
+    "file": "v3.15/language/python-decorators/references/recipes.md"
+  },
+  {
+    "question": "Why does my second loop over the same generator do nothing?",
+    "answer": "A one-pass iterator consumed once is empty forever after",
+    "file": "v3.15/language/python-iterators-generators/SKILL.md"
+  },
+  {
+    "question": "How do I make sure an async generator's cleanup runs when I break out of async for?",
+    "answer": "`aclosing` closes it at once",
+    "file": "v3.15/language/python-iterators-generators/SKILL.md"
+  },
+  {
+    "question": "itertools groupby gives me the same key twice in the output",
+    "answer": "Sort by the same key you group by",
+    "file": "v3.15/language/python-iterators-generators/references/itertools-recipes.md"
+  },
+  {
+    "question": "Why does putting lru_cache on a method cause a memory leak?",
+    "answer": "it keeps every instance alive until the entry is evicted",
+    "file": "v3.15/language/python-functools-caching/SKILL.md"
+  },
+  {
+    "question": "How can I cache API responses so they expire after five minutes?",
+    "answer": "`TTLCache(maxsize, ttl)` drops entries `ttl` seconds after they were stored",
+    "file": "v3.15/language/python-functools-caching/SKILL.md"
+  },
+  {
+    "question": "Can I keep my diskcache folder on Dropbox or a network share?",
+    "answer": "Never place it on NFS, SMB or a synced folder",
+    "file": "v3.15/language/python-functools-caching/references/cachetools-diskcache.md"
+  },
+  {
+    "question": "My match statement with case RED: matches every colour, not just red",
+    "answer": "A bare name in a pattern is always a capture",
+    "file": "v3.15/language/python-pattern-matching-enums/SKILL.md"
+  },
+  {
+    "question": "Which kind of enum should I use for status values that get saved to JSON or a database?",
+    "answer": "values stored in JSON, databases, config files, CLI options",
+    "file": "v3.15/language/python-pattern-matching-enums/SKILL.md"
+  },
+  {
+    "question": "Will a list pattern in match also match a string or a generator?",
+    "answer": "except `str`, `bytes` and `bytearray`",
+    "file": "v3.15/language/python-pattern-matching-enums/references/match-patterns.md"
+  },
+  {
+    "question": "How do I rename an enum member without breaking data stored under the old name?",
+    "answer": "Keep the old name as an alias",
+    "file": "v3.15/language/python-pattern-matching-enums/references/enum-recipes.md"
+  },
+  {
+    "question": "What should I use instead of list.pop(0) for a FIFO queue?",
+    "answer": "`collections.deque` is a double-ended queue with O(1)",
+    "file": "v3.15/language/python-data-structures/SKILL.md"
+  },
+  {
+    "question": "heapq throws TypeError '<' not supported when two tasks have the same priority",
+    "answer": "Without the counter, two equal priorities compare the payloads",
+    "file": "v3.15/language/python-data-structures/SKILL.md"
+  },
+  {
+    "question": "How much faster is checking if an item is in a set compared with a list?",
+    "answer": "the list membership test measured about 0.5 ms and the set test about 30 ns",
+    "file": "v3.15/language/python-data-structures/references/complexity.md"
+  },
+  {
+    "question": "How do I run build steps in dependency order, several at a time in parallel?",
+    "answer": "The incremental API gives batches of nodes whose dependencies are all done",
+    "file": "v3.15/language/python-data-structures/references/graphs-trees.md"
+  },
+  {
+    "question": "Why does Python's round(2.5) give 2 instead of 3?",
+    "answer": "round-half-to-even",
+    "file": "v3.15/standard-library/python-numbers-decimal/SKILL.md"
+  },
+  {
+    "question": "Converting a very big integer to a string fails with a ValueError about 4300 digits",
+    "answer": "it raises `ValueError` past 4300 digits",
+    "file": "v3.15/standard-library/python-numbers-decimal/SKILL.md"
+  },
+  {
+    "question": "How do I split 100 dollars three ways so the shares still add up to the total?",
+    "answer": "hand the leftover units to the shares with the largest remainders",
+    "file": "v3.15/standard-library/python-numbers-decimal/references/decimal-money.md"
+  },
+  {
+    "question": "Should I use statistics.stdev or pstdev for my measurements?",
+    "answer": "`stdev` and `variance` treat the data as a sample",
+    "file": "v3.15/standard-library/python-numbers-decimal/references/math-statistics.md"
+  },
+  {
+    "question": "How do I save a settings file so a crash or power cut never leaves it half written?",
+    "answer": "never half of each",
+    "file": "v3.15/standard-library/python-files-pathlib/SKILL.md"
+  },
+  {
+    "question": "Deleting a cloned repo folder with shutil fails with access denied on Windows, what do I do?",
+    "answer": "make_writable_and_retry",
+    "file": "v3.15/standard-library/python-files-pathlib/SKILL.md"
+  },
+  {
+    "question": "Does fsync on a Mac really push the data all the way to the disk?",
+    "answer": "F_FULLFSYNC",
+    "file": "v3.15/standard-library/python-files-pathlib/references/atomic-writes-and-locking.md"
+  },
+  {
+    "question": "How can I find duplicate files in a huge folder without hashing every single file?",
+    "answer": "grouping on size first",
+    "file": "v3.15/standard-library/python-files-pathlib/references/walking-and-watching.md"
+  },
+  {
+    "question": "Two strings both show café but == says they differ, how do I compare them?",
+    "answer": "before comparing, hashing or using text as a key",
+    "file": "v3.15/standard-library/python-text-unicode-regex/SKILL.md"
+  },
+  {
+    "question": "My regular expression freezes the server on some inputs, how do I stop that?",
+    "answer": "never give back what they matched",
+    "file": "v3.15/standard-library/python-text-unicode-regex/SKILL.md"
+  },
+  {
+    "question": "How do I turn a title like Crème brûlée into a plain ASCII URL slug?",
+    "answer": "slugify",
+    "file": "v3.15/standard-library/python-text-unicode-regex/references/unicode-in-practice.md"
+  },
+  {
+    "question": "How can I write a small lexer that splits an expression into numbers, names and operators?",
+    "answer": "names the kind that matched",
+    "file": "v3.15/standard-library/python-text-unicode-regex/references/regex-cookbook.md"
+  },
+  {
+    "question": "Can a template string build an SQL query with parameters so injection is impossible?",
+    "answer": "the database driver handles quoting",
+    "file": "v3.15/standard-library/python-text-unicode-regex/references/formatting-and-t-strings.md"
+  },
+  {
+    "question": "What does 'cannot import name from partially initialized module' mean and how do I fix it?",
+    "answer": "most likely due to a circular import",
+    "file": "v3.15/language/python-import-system/SKILL.md"
+  },
+  {
+    "question": "How do I defer heavy imports until first use with the new Python 3.15 syntax?",
+    "answer": "lazy from json import dumps",
+    "file": "v3.15/language/python-import-system/SKILL.md"
+  },
+  {
+    "question": "My library still supports 3.14 but I want its imports to be lazy on 3.15, how?",
+    "answer": "older versions ignore the list",
+    "file": "v3.15/language/python-import-system/references/lazy-imports.md"
+  },
+  {
+    "question": "How do I rename a function in my package and warn people still using the old name?",
+    "answer": "PEP 562",
+    "file": "v3.15/language/python-import-system/references/plugins-and-resources.md"
+  },
+  {
+    "question": "How can a test pretend an optional dependency is not installed?",
+    "answer": "monkeypatch.setitem(sys.modules",
+    "file": "v3.15/language/python-import-system/references/import-machinery.md"
+  },
+  {
+    "question": "Why don't threads make my CPU-heavy Python loop any faster?",
+    "answer": "The GIL serialises Python bytecode",
+    "file": "v3.15/services/python-concurrency/SKILL.md"
+  },
+  {
+    "question": "Which way does multiprocessing start workers on Linux, Mac and Windows now?",
+    "answer": "forkserver",
+    "file": "v3.15/services/python-concurrency/SKILL.md"
+  },
+  {
+    "question": "How do I find out which C extension switched the GIL back on in free-threaded Python?",
+    "answer": "error::RuntimeWarning",
+    "file": "v3.15/services/python-concurrency/references/free-threading.md"
+  },
+  {
+    "question": "How can several worker processes work on one big array without copying it to each?",
+    "answer": "SharedMemory",
+    "file": "v3.15/services/python-concurrency/references/processes-and-interpreters.md"
+  },
+  {
+    "question": "Why did YAML turn the country code NO into False?",
+    "answer": "Norway problem",
+    "file": "v3.15/standard-library/python-serialization/SKILL.md"
+  },
+  {
+    "question": "Excel shows garbled accented letters when it opens my CSV export, what encoding do I use?",
+    "answer": "utf-8-sig",
+    "file": "v3.15/standard-library/python-serialization/SKILL.md"
+  },
+  {
+    "question": "How do I hash a JSON object so that key order does not change the hash?",
+    "answer": "sort_keys=True",
+    "file": "v3.15/standard-library/python-serialization/references/json-in-depth.md"
+  },
+  {
+    "question": "Can a CSV export run formulas when someone opens it in a spreadsheet, and how do I prevent it?",
+    "answer": "prefixing a single quote",
+    "file": "v3.15/standard-library/python-serialization/references/csv-yaml-toml-recipes.md"
+  },
+  {
+    "question": "How should old saved records be upgraded after my data format changes?",
+    "answer": "migration chain",
+    "file": "v3.15/standard-library/python-serialization/references/binary-and-evolution.md"
+  },
+  {
+    "question": "I set DEBUG=false in the environment and debugging is still on, why?",
+    "answer": "Parse booleans from an explicit list of words",
+    "file": "v3.15/standard-library/python-configuration/SKILL.md"
+  },
+  {
+    "question": "A settings validation error printed my API key in the logs, how do I stop that?",
+    "answer": "hide_input_in_errors=True",
+    "file": "v3.15/standard-library/python-configuration/SKILL.md"
+  },
+  {
+    "question": "How do I read DATABASE_URL when all my other variables have an app prefix?",
+    "answer": "AliasChoices",
+    "file": "v3.15/standard-library/python-configuration/references/pydantic-settings-in-depth.md"
+  },
+  {
+    "question": "How do I catch a typo in a config file key instead of silently ignoring it, without pydantic?",
+    "answer": "unknown setting",
+    "file": "v3.15/standard-library/python-configuration/references/stdlib-config-loader.md"
+  },
+  {
+    "question": "How do I handle shutdown signals in code that must also run on Windows?",
+    "answer": "SIGBREAK",
+    "file": "v3.15/standard-library/python-cross-platform/SKILL.md"
+  },
+  {
+    "question": "Which file names can't be created on Windows even though they work on Linux?",
+    "answer": "reserved names",
+    "file": "v3.15/standard-library/python-cross-platform/SKILL.md"
+  },
+  {
+    "question": "How do I ask a child process on Windows to shut down cleanly instead of killing it?",
+    "answer": "CTRL_BREAK_EVENT",
+    "file": "v3.15/standard-library/python-cross-platform/references/windows-specifics.md"
+  },
+  {
+    "question": "How do I run my test suite on Linux, macOS and Windows on every push?",
+    "answer": "fail-fast: false",
+    "file": "v3.15/standard-library/python-cross-platform/references/ci-and-testing.md"
+  },
+  {
+    "question": "Why does my SQLite write fail with database is locked straight away even though I set a busy timeout?",
+    "answer": "BEGIN IMMEDIATE",
+    "file": "v3.15/data-and-ai/python-sqlite/SKILL.md"
+  },
+  {
+    "question": "How do I track which schema version a local SQLite file is at without a separate migrations table?",
+    "answer": "PRAGMA user_version",
+    "file": "v3.15/data-and-ai/python-sqlite/SKILL.md"
+  },
+  {
+    "question": "How can I search note text stored in SQLite and show the best matches first?",
+    "answer": "bm25",
+    "file": "v3.15/data-and-ai/python-sqlite/references/json-and-fts5.md"
+  },
+  {
+    "question": "Can I query SQLite from an asyncio program without blocking the event loop?",
+    "answer": "aiosqlite",
+    "file": "v3.15/data-and-ai/python-sqlite/references/async-and-concurrency.md"
+  },
+  {
+    "question": "SQLite let me save text in an integer column, how do I make it reject wrong types?",
+    "answer": "STRICT tables",
+    "file": "v3.15/data-and-ai/python-sqlite/references/schema-types-and-backups.md"
+  },
+  {
+    "question": "How do I safely put a table name that comes from a variable into a Postgres query?",
+    "answer": "sql.Identifier",
+    "file": "v3.15/data-and-ai/psycopg-postgres/SKILL.md"
+  },
+  {
+    "question": "Which exception do I catch when an insert into Postgres hits a duplicate key?",
+    "answer": "UniqueViolation",
+    "file": "v3.15/data-and-ai/psycopg-postgres/SKILL.md"
+  },
+  {
+    "question": "What is the fastest way to load a million rows into Postgres from Python?",
+    "answer": "COPY ... FROM STDIN",
+    "file": "v3.15/data-and-ai/psycopg-postgres/references/bulk-and-streaming.md"
+  },
+  {
+    "question": "How can my Python program get woken up when something changes in a Postgres table?",
+    "answer": "pg_notify",
+    "file": "v3.15/data-and-ai/psycopg-postgres/references/notify-and-testing.md"
+  },
+  {
+    "question": "Listing authors with their books runs hundreds of SQL queries, how do I load the books efficiently?",
+    "answer": "selectinload",
+    "file": "v3.15/data-and-ai/sqlalchemy-orm/SKILL.md"
+  },
+  {
+    "question": "How long should a SQLAlchemy session live in a request or a background job?",
+    "answer": "one session per unit of work",
+    "file": "v3.15/data-and-ai/sqlalchemy-orm/SKILL.md"
+  },
+  {
+    "question": "How can a test fail when a code path starts running more SQL queries than before?",
+    "answer": "before_cursor_execute",
+    "file": "v3.15/data-and-ai/sqlalchemy-orm/references/loading-and-bulk.md"
+  },
+  {
+    "question": "With AsyncSession, how do I load a relationship on an object I already fetched?",
+    "answer": "refresh named attributes",
+    "file": "v3.15/data-and-ai/sqlalchemy-orm/references/async-and-testing.md"
+  },
+  {
+    "question": "I renamed a column in my model and the generated migration drops it and adds a new one, how do I keep the data?",
+    "answer": "new_column_name",
+    "file": "v3.15/data-and-ai/alembic-migrations/SKILL.md"
+  },
+  {
+    "question": "How do I change a column type on SQLite with Alembic when ALTER TABLE cannot do it?",
+    "answer": "batch_alter_table",
+    "file": "v3.15/data-and-ai/alembic-migrations/SKILL.md"
+  },
+  {
+    "question": "Two developers each added a migration and now upgrade complains about multiple heads, how do I fix it?",
+    "answer": "merge heads",
+    "file": "v3.15/data-and-ai/alembic-migrations/references/data-branches-offline.md"
+  },
+  {
+    "question": "How can CI fail when someone changes a model but forgets to write the migration?",
+    "answer": "AutogenerateDiffsDetected",
+    "file": "v3.15/data-and-ai/alembic-migrations/references/running-and-testing.md"
+  },
+  {
+    "question": "What is the modern way to make seeded, reproducible random numbers in NumPy?",
+    "answer": "default_rng",
+    "file": "v3.15/data-and-ai/numpy/SKILL.md"
+  },
+  {
+    "question": "Why did changing a slice of my array also change the original array?",
+    "answer": "shares_memory",
+    "file": "v3.15/data-and-ai/numpy/SKILL.md"
+  },
+  {
+    "question": "Is there a tool that rewrites the NumPy aliases removed in version 2 for me?",
+    "answer": "NPY201",
+    "file": "v3.15/data-and-ai/numpy/references/numpy-2-changes.md"
+  },
+  {
+    "question": "How can I compute a moving average over windows of an array without copying the data?",
+    "answer": "sliding_window_view",
+    "file": "v3.15/data-and-ai/numpy/references/memory-and-performance.md"
+  },
+  {
+    "question": "Why does setting values through df['col'][mask] no longer change my DataFrame?",
+    "answer": "chained assignment",
+    "file": "v3.15/data-and-ai/pandas/SKILL.md"
+  },
+  {
+    "question": "How do I make sure a left merge in pandas does not duplicate my rows?",
+    "answer": "validate=\"many_to_one\"",
+    "file": "v3.15/data-and-ai/pandas/SKILL.md"
+  },
+  {
+    "question": "After upgrading pandas my epoch timestamps are a thousand times smaller, what happened?",
+    "answer": "as_unit",
+    "file": "v3.15/data-and-ai/pandas/references/pandas-3-migration.md"
+  },
+  {
+    "question": "How do I see how much memory a DataFrame really uses, including its string columns?",
+    "answer": "memory_usage(deep=True)",
+    "file": "v3.15/data-and-ai/pandas/references/io-and-performance.md"
+  },
+  {
+    "question": "After upgrading Polars my join results come back in a different order, how do I keep the left order?",
+    "answer": "maintain_order",
+    "file": "v3.15/data-and-ai/polars/SKILL.md"
+  },
+  {
+    "question": "What should I use to run pipelines over Parquet files bigger than my RAM?",
+    "answer": "Polars lazy with the streaming engine",
+    "file": "v3.15/data-and-ai/polars/SKILL.md"
+  },
+  {
+    "question": "How do I write a Polars query result to one Parquet folder per category value?",
+    "answer": "PartitionBy",
+    "file": "v3.15/data-and-ai/polars/references/lazy-and-io.md"
+  },
+  {
+    "question": "How do I bucket timestamps into hourly totals in Polars, like pandas resample?",
+    "answer": "group_by_dynamic",
+    "file": "v3.15/data-and-ai/polars/references/time-and-interop.md"
+  },
+  {
+    "question": "My CLI is tested by launching it with subprocess, but coverage says main() never ran. How do I get those lines counted?",
+    "answer": "every Python child starts coverage with the parent's configuration",
+    "file": "v3.15/quality/coverage-py/SKILL.md"
+  },
+  {
+    "question": "Why does coverage fall back to the old C tracer when I measure branches on Python 3.13?",
+    "answer": "sys.monitoring can't measure branches in this version",
+    "file": "v3.15/quality/coverage-py/SKILL.md"
+  },
+  {
+    "question": "The combine job in GitHub Actions finds no coverage data even though every test job uploaded an artifact.",
+    "answer": "include-hidden-files: true",
+    "file": "v3.15/quality/coverage-py/references/combining-in-ci.md"
+  },
+  {
+    "question": "How can I find out which test executed a particular line of my code?",
+    "answer": "Contexts: which test ran this line",
+    "file": "v3.15/quality/coverage-py/references/reports-and-exclusions.md"
+  },
+  {
+    "question": "mypy in my git hook can't resolve imports of packages that are installed in my project. How should the hook be set up?",
+    "answer": "A type checker needs your project's dependencies to resolve imports",
+    "file": "v3.15/tooling/pre-commit/SKILL.md"
+  },
+  {
+    "question": "One hook is getting in my way. Can I just commit with --no-verify?",
+    "answer": "skips every pre-commit and commit-msg hook at once",
+    "file": "v3.15/tooling/pre-commit/SKILL.md"
+  },
+  {
+    "question": "How do I publish my own hook so other repositories can add it to their config?",
+    "answer": "Writing a reusable hook repository",
+    "file": "v3.15/tooling/pre-commit/references/hooks-and-ci.md"
+  },
+  {
+    "question": "Can prek run independent hooks at the same time instead of one after another?",
+    "answer": "Hooks with equal priority run concurrently",
+    "file": "v3.15/tooling/pre-commit/references/prek.md"
+  },
+  {
+    "question": "How do I make a nox session install exactly the versions pinned in uv.lock instead of resolving again?",
+    "answer": "Install the locked project with uv sync",
+    "file": "v3.15/tooling/nox-sessions/SKILL.md"
+  },
+  {
+    "question": "Using nox, how can I run my tests against the oldest dependency versions my package claims to support?",
+    "answer": "tests against both the newest and the oldest dependency versions",
+    "file": "v3.15/tooling/nox-sessions/SKILL.md"
+  },
+  {
+    "question": "In CI my coverage job runs every test session again before combining. How do I make it only combine?",
+    "answer": "Coverage from many sessions and jobs",
+    "file": "v3.15/tooling/nox-sessions/references/ci-recipes.md"
+  },
+  {
+    "question": "After running tox, uv sync fails saying .venv is a file, not a directory.",
+    "answer": "venv_redirect = false",
+    "file": "v3.15/tooling/nox-sessions/references/tox-with-uv.md"
+  },
+  {
+    "question": "My doctest in a Markdown page fails and the expected output contains the closing code fence.",
+    "answer": "leave a blank line between the last output line and the closing fence",
+    "file": "v3.15/tooling/python-docs/SKILL.md"
+  },
+  {
+    "question": "Is Material for MkDocs still a good choice for a new documentation site?",
+    "answer": "Material for MkDocs reaches end of life on May 5, 2027",
+    "file": "v3.15/tooling/python-docs/SKILL.md"
+  },
+  {
+    "question": "How do I keep docs for several released versions of my library on GitHub Pages with a version switcher?",
+    "answer": "Versioned sites with mike",
+    "file": "v3.15/tooling/python-docs/references/mkdocs-mkdocstrings.md"
+  },
+  {
+    "question": "Sphinx's doctest builder reports NameError for the function my docstring example calls.",
+    "answer": "doctest_global_setup",
+    "file": "v3.15/tooling/python-docs/references/sphinx.md"
+  },
+  {
+    "question": "How do I mark a function as going away so callers get a runtime warning and their type checker flags it too?",
+    "answer": "Deprecate before removing with warnings.deprecated",
+    "file": "v3.15/tooling/python-library-maintenance/SKILL.md"
+  },
+  {
+    "question": "Can CI tell me if a pull request accidentally removed or changed a public function compared to the last release?",
+    "answer": "griffe compares the public API of two git references",
+    "file": "v3.15/tooling/python-library-maintenance/SKILL.md"
+  },
+  {
+    "question": "I want to change a parameter's default in the next major release without silently changing behaviour for existing callers.",
+    "answer": "Use a sentinel to detect \"not passed\"",
+    "file": "v3.15/tooling/python-library-maintenance/references/deprecation-patterns.md"
+  },
+  {
+    "question": "Every pull request edits CHANGELOG.md and we keep getting merge conflicts. What do we do?",
+    "answer": "towncrier collects one small file per change",
+    "file": "v3.15/tooling/python-library-maintenance/references/changelog-and-release.md"
+  },
+  {
+    "question": "My ctypes call returns garbage for a 64-bit pointer and sometimes crashes the interpreter.",
+    "answer": "truncates 64-bit pointers and sizes",
+    "file": "v3.15/tooling/python-native-extensions/SKILL.md"
+  },
+  {
+    "question": "Importing my compiled module on Python 3.14t prints a warning that the GIL has been enabled. How do I stop that?",
+    "answer": "importing an extension that has not declared support turns the GIL back on",
+    "file": "v3.15/tooling/python-native-extensions/SKILL.md"
+  },
+  {
+    "question": "Building my Cython package from its sdist fails because the .pyx file is missing.",
+    "answer": "recursive-include src *.pyx",
+    "file": "v3.15/tooling/python-native-extensions/references/build-recipes.md"
+  },
+  {
+    "question": "AddressSanitizer does not report an out-of-bounds read in my C extension when called from Python.",
+    "answer": "Python's own small-object allocator must be turned off",
+    "file": "v3.15/tooling/python-native-extensions/references/crashes-and-threads.md"
+  },
+  {
+    "question": "Why does docker stop take ten seconds before it kills my Python container?",
+    "answer": "the kernel gives PID 1 no default signal actions",
+    "file": "v3.15/tooling/python-containers/SKILL.md"
+  },
+  {
+    "question": "How can a Docker health check test my app when the slim image has no curl?",
+    "answer": "check with Python itself",
+    "file": "v3.15/tooling/python-containers/SKILL.md"
+  },
+  {
+    "question": "Can I switch my Python image to Alpine, and how do I know all my packages have wheels for it?",
+    "answer": "Many popular packages publish musl wheels now, so check before deciding",
+    "file": "v3.15/tooling/python-containers/references/base-images-and-size.md"
+  },
+  {
+    "question": "Two builds of the same commit give different image digests, can uv images be byte-for-byte identical?",
+    "answer": "the realistic target is reproducible dependency layers and pinned inputs",
+    "file": "v3.15/tooling/python-containers/references/reproducible-and-secure-builds.md"
+  },
+  {
+    "question": "Why does my Python worker die instantly on kill without running its finally blocks?",
+    "answer": "so the process dies at once",
+    "file": "v3.15/services/python-services-shutdown/SKILL.md"
+  },
+  {
+    "question": "How do I make sure only one copy of my background app runs, even after a crash?",
+    "answer": "An OS file lock is released automatically when the process dies",
+    "file": "v3.15/services/python-services-shutdown/SKILL.md"
+  },
+  {
+    "question": "How do I tell systemd my Python service has finished starting without installing extra packages?",
+    "answer": "The protocol is plain text lines, so the standard library is enough",
+    "file": "v3.15/services/python-services-shutdown/references/systemd-and-launchd.md"
+  },
+  {
+    "question": "I registered python.exe with sc.exe and Windows says error 1053, what is wrong?",
+    "answer": "does not speak that protocol",
+    "file": "v3.15/services/python-services-shutdown/references/windows-services.md"
+  },
+  {
+    "question": "Spans I create inside a thread pool show up as separate traces instead of children",
+    "answer": "and its spans start new traces",
+    "file": "v3.15/services/python-observability-otel/SKILL.md"
+  },
+  {
+    "question": "How do I get the trace id into every log line my service writes?",
+    "answer": "links logs to traces",
+    "file": "v3.15/services/python-observability-otel/SKILL.md"
+  },
+  {
+    "question": "My Prometheus counters are wrong when I run several worker processes",
+    "answer": "Multiprocess mode writes every process's values to files",
+    "file": "v3.15/services/python-observability-otel/references/metrics-and-prometheus.md"
+  },
+  {
+    "question": "How can I check in pytest that my code produced the right spans?",
+    "answer": "An in-memory exporter collects finished spans in a list",
+    "file": "v3.15/services/python-observability-otel/references/testing-and-manual-instrumentation.md"
+  },
+  {
+    "question": "Should I pass the whole customer object to a background job or just its id?",
+    "answer": "Pass ids and small values, and load current data inside the task",
+    "file": "v3.15/services/python-task-queues/SKILL.md"
+  },
+  {
+    "question": "Why did my hour-long Celery job on Redis run twice?",
+    "answer": "a task running longer runs twice",
+    "file": "v3.15/services/python-task-queues/SKILL.md"
+  },
+  {
+    "question": "Docker stops my Huey consumer and the running tasks are cut off, how do I let them finish?",
+    "answer": "By default SIGINT is the graceful signal and SIGTERM interrupts running tasks",
+    "file": "v3.15/services/python-task-queues/references/library-recipes.md"
+  },
+  {
+    "question": "How can I save an order and queue its receipt email so neither happens without the other?",
+    "answer": "the job is written as a row in the same transaction as the data",
+    "file": "v3.15/services/python-task-queues/references/reliability-patterns.md"
+  },
+  {
+    "question": "Why do my TCP messages sometimes arrive glued together or cut in half?",
+    "answer": "Framing marks where each message ends",
+    "file": "v3.15/services/python-networking-websockets/SKILL.md"
+  },
+  {
+    "question": "My websocket client reconnects hundreds of times a second, isn't there backoff?",
+    "answer": "A connection that opens and then closes resets it",
+    "file": "v3.15/services/python-networking-websockets/SKILL.md"
+  },
+  {
+    "question": "How do I answer a load balancer health check and reject bad tokens on a websockets server?",
+    "answer": "runs before the WebSocket handshake",
+    "file": "v3.15/services/python-networking-websockets/references/websockets.md"
+  },
+  {
+    "question": "How can two local processes talk on Windows when there are no Unix sockets?",
+    "answer": "gives one API over Unix domain sockets on macOS and Linux and named pipes on Windows",
+    "file": "v3.15/services/python-networking-websockets/references/sockets-and-ipc.md"
+  },
+  {
+    "question": "findall returns an empty list on my Atom feed even though it has entries",
+    "answer": "This is the most common XML bug",
+    "file": "v3.15/standard-library/python-html-xml-parsing/SKILL.md"
+  },
+  {
+    "question": "Is it safe to parse XML files that users upload?",
+    "answer": "XML from outside can define entities that expand to gigabytes",
+    "file": "v3.15/standard-library/python-html-xml-parsing/SKILL.md"
+  },
+  {
+    "question": "The XPath I copied from Chrome devtools matches nothing in my scraper",
+    "answer": "Check the raw HTML (view-source)",
+    "file": "v3.15/standard-library/python-html-xml-parsing/references/selectors-xpath-css.md"
+  },
+  {
+    "question": "A site answers 429 Too Many Requests, how long should my scraper wait?",
+    "answer": "Wait at least that long, and widen the host's interval for the rest of the crawl",
+    "file": "v3.15/standard-library/python-html-xml-parsing/references/scraping-politely.md"
+  },
+  {
+    "question": "Why does Claude only see 'Error executing tool' instead of the message from the exception my MCP tool raised?",
+    "answer": "bugs: their text may hold secrets, so it stays private",
+    "file": "v3.15/data-and-ai/mcp-python-servers/SKILL.md"
+  },
+  {
+    "question": "My Python MCP server prints a line and the client complains it can't parse the message, what is wrong?",
+    "answer": "Failed to parse JSONRPC message",
+    "file": "v3.15/data-and-ai/mcp-python-servers/SKILL.md"
+  },
+  {
+    "question": "What output schema does an MCP tool get when the function just returns a bool?",
+    "answer": "delete_noteOutput",
+    "file": "v3.15/data-and-ai/mcp-python-servers/references/tools-and-schemas.md"
+  },
+  {
+    "question": "Claude launches my MCP server but it can't see the API key I exported in my shell",
+    "answer": "An API key in your shell does not reach the server unless you pass it.",
+    "file": "v3.15/data-and-ai/mcp-python-servers/references/testing-and-transports.md"
+  },
+  {
+    "question": "How do I get Claude's answer back as a validated pydantic object in Python?",
+    "answer": "parsed_output",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/SKILL.md"
+  },
+  {
+    "question": "The anthropic client refuses my request with max_tokens set to 64000, why?",
+    "answer": "Streaming is required for operations that may take longer than 10 minutes",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/SKILL.md"
+  },
+  {
+    "question": "What does the tool runner send to Claude when my tool function crashes with an ordinary exception?",
+    "answer": "RuntimeError('db down')",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/references/tools-and-structured-output.md"
+  },
+  {
+    "question": "How can I find out why the prompt cache keeps missing between my requests?",
+    "answer": "cache_miss_reason",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/references/batches-files-and-testing.md"
+  },
+  {
+    "question": "Text with square brackets vanishes when I print it with rich, how do I print it as is?",
+    "answer": "rich.markup.escape",
+    "file": "v3.15/services/python-terminal-ui/SKILL.md"
+  },
+  {
+    "question": "My Textual app hangs while it loads data from disk, how do I keep it responsive?",
+    "answer": "@work(thread=True)",
+    "file": "v3.15/services/python-terminal-ui/SKILL.md"
+  },
+  {
+    "question": "How do I unit test what my program prints through rich?",
+    "answer": "Pass the console into the code under test",
+    "file": "v3.15/services/python-terminal-ui/references/rich-recipes.md"
+  },
+  {
+    "question": "How do I show a yes or no dialog in Textual and wait for the answer?",
+    "answer": "push_screen_wait",
+    "file": "v3.15/services/python-terminal-ui/references/textual-apps.md"
+  },
+  {
+    "question": "Should I switch my project's type checking to ty or keep mypy with Django plugins?",
+    "answer": "ty has no plugin system",
+    "file": "v3.15/tooling/ty/SKILL.md"
+  },
+  {
+    "question": "My build failed but ty only printed warnings, why is the exit code non-zero?",
+    "answer": "ty exits 1 on warnings as well as errors by default",
+    "file": "v3.15/tooling/ty/SKILL.md"
+  },
+  {
+    "question": "What is the equivalent of mypy strict mode in Astral's type checker?",
+    "answer": "ty has no `--strict` flag",
+    "file": "v3.15/tooling/ty/SKILL.md"
+  },
+  {
+    "question": "How do I add a type checker to an old codebase with hundreds of existing errors without fixing them all first?",
+    "answer": "--add-ignore",
+    "file": "v3.15/tooling/ty/SKILL.md"
+  },
+  {
+    "question": "How do I require type annotations on every function when ty does not report them?",
+    "answer": "Requiring annotations is Ruff's job",
+    "file": "v3.15/tooling/ty/SKILL.md"
+  },
+  {
+    "question": "This repo has a poetry.lock, should I run uv add here?",
+    "answer": "leave it to that tool, unless the job is to migrate",
+    "file": "v3.15/tooling/uv-projects/SKILL.md"
+  },
+  {
+    "question": "What replaces pyenv global when I move to uv?",
+    "answer": "uv python install 3.14 --default",
+    "file": "v3.15/tooling/uv-projects/SKILL.md"
+  },
+  {
+    "question": "ruff format wants to rewrite every file in a repo I just opened, what should I do?",
+    "answer": "skip formatting in this change",
+    "file": "v3.15/tooling/ruff/SKILL.md"
+  },
+  {
+    "question": "What is the Ruff command for isort --check?",
+    "answer": "ruff check --select I",
+    "file": "v3.15/tooling/ruff/SKILL.md"
+  },
+  {
+    "question": "My pydantic model field holds a subclass but model_dump drops the subclass fields",
+    "answer": "subclass fields disappear without an error",
+    "file": "v3.15/language/python-data-models/references/pydantic.md"
+  },
+  {
+    "question": "polymorphic_serialization on my model does nothing, where does the setting go?",
+    "answer": "on the **base** class",
+    "file": "v3.15/language/python-data-models/references/pydantic.md"
+  },
+  {
+    "question": "Why do I get UnsupportedFieldAttributeWarning when my pydantic class is created?",
+    "answer": "Move it to the outermost annotation",
+    "file": "v3.15/language/python-data-models/references/pydantic.md"
+  },
+  {
+    "question": "How do I define a recursive JSON type that pydantic can validate?",
+    "answer": "A recursive alias needs a real alias type",
+    "file": "v3.15/language/python-data-models/references/pydantic.md"
+  },
+  {
+    "question": "Which Markdown or Rich options does a Typer app have for help text?",
+    "answer": "rich_markup_mode",
+    "file": "v3.15/services/python-cli/references/typer-and-click.md"
+  },
+  {
+    "question": "Do I install typer-slim or typer?",
+    "answer": "`typer-slim` and `typer-cli` are deprecated",
+    "file": "v3.15/services/python-cli/references/typer-and-click.md"
+  },
+  {
+    "question": "After upgrading RQ my nightly job runs at a different hour, what changed?",
+    "answer": "cron strings evaluate in local time, not UTC",
+    "file": "v3.15/services/python-task-queues/references/library-recipes.md"
+  },
+  {
+    "question": "Which torch build do I use when nvidia-smi reports CUDA 13.4?",
+    "answer": "cu134",
+    "file": "v3.15/data-and-ai/python-ml-packages/SKILL.md"
+  },
+  {
+    "question": "Can I install the latest PyTorch on Python 3.10?",
+    "answer": "torch 2.15 needs 3.11 or newer",
+    "file": "v3.15/data-and-ai/python-ml-packages/SKILL.md"
+  },
+  {
+    "question": "How do I read why Claude refused a request in the Python SDK?",
+    "answer": "stop_details",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/SKILL.md"
+  },
+  {
+    "question": "How do I keep a very long Claude conversation from filling the context window?",
+    "answer": "compact_20260112",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/SKILL.md"
+  },
+  {
+    "question": "with_raw_response code broke after upgrading the Anthropic SDK, how do I read the text now?",
+    "answer": "`r.text()`",
+    "file": "v3.15/data-and-ai/anthropic-sdk-python/references/upgrading-from-0x.md"
+  },
+  {
+    "question": "How should a list tool in my MCP server handle thousands of results?",
+    "answer": "Never return an unbounded list",
+    "file": "v3.15/data-and-ai/mcp-python-servers/references/tools-and-schemas.md"
+  },
+  {
+    "question": "How do I test whether a model can actually use my MCP server?",
+    "answer": "Write about ten questions",
+    "file": "v3.15/data-and-ai/mcp-python-servers/references/testing-and-transports.md"
+  },
+  {
+    "question": "When is mypyc a better choice than Cython or Rust?",
+    "answer": "strictly typed pure-Python module",
+    "file": "v3.15/quality/python-performance/references/mypyc.md"
+  },
+  {
+    "question": "mock.patch stopped working after I compiled my module with mypyc",
+    "answer": "calls inside a unit are bound at compile time",
+    "file": "v3.15/quality/python-performance/references/mypyc.md"
+  },
+  {
+    "question": "How do I send traces to Logfire from a FastAPI app?",
+    "answer": "logfire.instrument_fastapi(app)",
+    "file": "v3.15/services/python-observability-otel/SKILL.md"
+  }
+]

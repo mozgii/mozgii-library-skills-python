@@ -1,0 +1,1423 @@
+{
+  "packages": [
+    {
+      "name": "abi3audit",
+      "ecosystem": "pypi",
+      "version": "0.0.26",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "aiohttp",
+      "ecosystem": "pypi",
+      "version": "3.14.5",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "aiosqlite",
+      "ecosystem": "pypi",
+      "version": "0.22.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "alembic",
+      "ecosystem": "pypi",
+      "version": "1.20.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "anthropic",
+      "ecosystem": "pypi",
+      "version": "2.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "anyio",
+      "ecosystem": "pypi",
+      "version": "4.15.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "argon2-cffi",
+      "ecosystem": "pypi",
+      "version": "25.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "arq",
+      "ecosystem": "pypi",
+      "version": "0.28.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "asyncpg",
+      "ecosystem": "pypi",
+      "version": "0.32.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "attrs",
+      "ecosystem": "pypi",
+      "version": "26.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "babel",
+      "ecosystem": "pypi",
+      "version": "2.18.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "bandit",
+      "ecosystem": "pypi",
+      "version": "1.9.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "basedpyright",
+      "ecosystem": "pypi",
+      "version": "1.40.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "bcrypt",
+      "ecosystem": "pypi",
+      "version": "5.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "beautifulsoup4",
+      "ecosystem": "pypi",
+      "version": "4.15.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "bitsandbytes",
+      "ecosystem": "pypi",
+      "version": "0.50.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "black",
+      "ecosystem": "pypi",
+      "version": "26.10.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "boto3",
+      "ecosystem": "pypi",
+      "version": "1.43.123",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "build",
+      "ecosystem": "pypi",
+      "version": "1.6.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "bump-pydantic",
+      "ecosystem": "pypi",
+      "version": "0.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cachetools",
+      "ecosystem": "pypi",
+      "version": "7.2.7",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "celery",
+      "ecosystem": "pypi",
+      "version": "5.6.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "certifi",
+      "ecosystem": "pypi",
+      "version": "2026.10.23",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cffi",
+      "ecosystem": "pypi",
+      "version": "2.1.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "charset-normalizer",
+      "ecosystem": "pypi",
+      "version": "3.5.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cibuildwheel",
+      "ecosystem": "pypi",
+      "version": "4.3.5",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "click",
+      "ecosystem": "pypi",
+      "version": "8.5.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cmake",
+      "ecosystem": "pypi",
+      "version": "4.4.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "colorama",
+      "ecosystem": "pypi",
+      "version": "0.4.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "coverage",
+      "ecosystem": "pypi",
+      "version": "7.17.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cryptography",
+      "ecosystem": "pypi",
+      "version": "50.0.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cssselect",
+      "ecosystem": "pypi",
+      "version": "1.6.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "cython",
+      "ecosystem": "pypi",
+      "version": "3.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "debugpy",
+      "ecosystem": "pypi",
+      "version": "1.8.22",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "defusedxml",
+      "ecosystem": "pypi",
+      "version": "0.7.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "delvewheel",
+      "ecosystem": "pypi",
+      "version": "1.13.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "diff-cover",
+      "ecosystem": "pypi",
+      "version": "11.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "dill",
+      "ecosystem": "pypi",
+      "version": "0.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "diskcache",
+      "ecosystem": "pypi",
+      "version": "5.6.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "distro",
+      "ecosystem": "pypi",
+      "version": "1.9.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "dramatiq",
+      "ecosystem": "pypi",
+      "version": "2.2.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "duckdb",
+      "ecosystem": "pypi",
+      "version": "2.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "exceptiongroup",
+      "ecosystem": "pypi",
+      "version": "1.3.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "fakeredis",
+      "ecosystem": "pypi",
+      "version": "2.40.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "filelock",
+      "ecosystem": "pypi",
+      "version": "4.2.5",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "flake8",
+      "ecosystem": "pypi",
+      "version": "7.5.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "flash-attn",
+      "ecosystem": "pypi",
+      "version": "2.8.3.post2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "flower",
+      "ecosystem": "pypi",
+      "version": "2.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "furo",
+      "ecosystem": "pypi",
+      "version": "2025.12.19",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "gevent",
+      "ecosystem": "pypi",
+      "version": "26.9.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "greenlet",
+      "ecosystem": "pypi",
+      "version": "3.5.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "griffe",
+      "ecosystem": "pypi",
+      "version": "2.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "h2",
+      "ecosystem": "pypi",
+      "version": "4.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "hatch-vcs",
+      "ecosystem": "pypi",
+      "version": "0.5.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "hatchling",
+      "ecosystem": "pypi",
+      "version": "1.33.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "hishel",
+      "ecosystem": "pypi",
+      "version": "1.4.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "html5lib",
+      "ecosystem": "pypi",
+      "version": "1.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "httpx",
+      "ecosystem": "pypi",
+      "version": "0.28.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "httpx2",
+      "ecosystem": "pypi",
+      "version": "2.16.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "huey",
+      "ecosystem": "pypi",
+      "version": "3.5.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "hypothesis",
+      "ecosystem": "pypi",
+      "version": "6.170.14",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "import-linter",
+      "ecosystem": "pypi",
+      "version": "2.15",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "importlib-metadata",
+      "ecosystem": "pypi",
+      "version": "10.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "importlib-resources",
+      "ecosystem": "pypi",
+      "version": "7.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "installer",
+      "ecosystem": "pypi",
+      "version": "1.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "ipdb",
+      "ecosystem": "pypi",
+      "version": "0.13.13",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "isort",
+      "ecosystem": "pypi",
+      "version": "9.0.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "jinja2",
+      "ecosystem": "pypi",
+      "version": "3.1.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "joblib",
+      "ecosystem": "pypi",
+      "version": "1.6.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "keyring",
+      "ecosystem": "pypi",
+      "version": "25.7.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "librt",
+      "ecosystem": "pypi",
+      "version": "0.16.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "llama-cpp-python",
+      "ecosystem": "pypi",
+      "version": "0.3.36",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "logfire",
+      "ecosystem": "pypi",
+      "version": "5.4.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "lxml",
+      "ecosystem": "pypi",
+      "version": "6.1.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "markdown",
+      "ecosystem": "pypi",
+      "version": "3.11.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "maturin",
+      "ecosystem": "pypi",
+      "version": "1.16.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mcp",
+      "ecosystem": "pypi",
+      "version": "2.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "memray",
+      "ecosystem": "pypi",
+      "version": "1.20.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "meson-python",
+      "ecosystem": "pypi",
+      "version": "0.22.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "migrate-to-uv",
+      "ecosystem": "pypi",
+      "version": "0.12.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mike",
+      "ecosystem": "pypi",
+      "version": "2.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mkdocs",
+      "ecosystem": "pypi",
+      "version": "1.6.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mkdocs-material",
+      "ecosystem": "pypi",
+      "version": "9.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mkdocstrings",
+      "ecosystem": "pypi",
+      "version": "1.0.8",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mkdocstrings-python",
+      "ecosystem": "pypi",
+      "version": "2.0.10",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mlx",
+      "ecosystem": "pypi",
+      "version": "0.32.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mlx-lm",
+      "ecosystem": "pypi",
+      "version": "0.32.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mlx-vlm",
+      "ecosystem": "pypi",
+      "version": "0.7.11",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "more-itertools",
+      "ecosystem": "pypi",
+      "version": "11.2.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "msgpack",
+      "ecosystem": "pypi",
+      "version": "1.2.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "msgspec",
+      "ecosystem": "pypi",
+      "version": "0.22.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mypy",
+      "ecosystem": "pypi",
+      "version": "2.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "mypy-extensions",
+      "ecosystem": "pypi",
+      "version": "1.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "myst-parser",
+      "ecosystem": "pypi",
+      "version": "5.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nanobind",
+      "ecosystem": "pypi",
+      "version": "3.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nh3",
+      "ecosystem": "pypi",
+      "version": "0.3.7",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nox",
+      "ecosystem": "pypi",
+      "version": "2026.10.20",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "nox-uv",
+      "ecosystem": "pypi",
+      "version": "0.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "numba",
+      "ecosystem": "pypi",
+      "version": "0.68.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "numpy",
+      "ecosystem": "pypi",
+      "version": "2.5.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "onnxruntime",
+      "ecosystem": "pypi",
+      "version": "1.31.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "onnxruntime-gpu",
+      "ecosystem": "pypi",
+      "version": "1.31.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-api",
+      "ecosystem": "pypi",
+      "version": "1.45.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-distro",
+      "ecosystem": "pypi",
+      "version": "0.66b2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp",
+      "ecosystem": "pypi",
+      "version": "1.45.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-exporter-prometheus",
+      "ecosystem": "pypi",
+      "version": "0.66b2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-instrumentation-httpx",
+      "ecosystem": "pypi",
+      "version": "0.66b2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-instrumentation-logging",
+      "ecosystem": "pypi",
+      "version": "0.66b2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "ecosystem": "pypi",
+      "version": "1.45.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "orjson",
+      "ecosystem": "pypi",
+      "version": "3.13.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "packaging",
+      "ecosystem": "pypi",
+      "version": "26.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pandas",
+      "ecosystem": "pypi",
+      "version": "3.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pendulum",
+      "ecosystem": "pypi",
+      "version": "3.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pip",
+      "ecosystem": "pypi",
+      "version": "26.2.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pip-audit",
+      "ecosystem": "pypi",
+      "version": "2.10.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pip-tools",
+      "ecosystem": "pypi",
+      "version": "7.6.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pipx",
+      "ecosystem": "pypi",
+      "version": "1.18.11",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "platformdirs",
+      "ecosystem": "pypi",
+      "version": "4.14.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "poetry",
+      "ecosystem": "pypi",
+      "version": "2.5.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "polars",
+      "ecosystem": "pypi",
+      "version": "2.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pre-commit",
+      "ecosystem": "pypi",
+      "version": "4.7.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pre-commit-hooks",
+      "ecosystem": "pypi",
+      "version": "6.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pre-commit-uv",
+      "ecosystem": "pypi",
+      "version": "4.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "prek",
+      "ecosystem": "pypi",
+      "version": "0.5.9",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "procrastinate",
+      "ecosystem": "pypi",
+      "version": "3.10.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "prometheus-client",
+      "ecosystem": "pypi",
+      "version": "0.26.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "properdocs",
+      "ecosystem": "pypi",
+      "version": "1.6.7",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "protobuf",
+      "ecosystem": "pypi",
+      "version": "7.36.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "psutil",
+      "ecosystem": "pypi",
+      "version": "7.2.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "psycopg",
+      "ecosystem": "pypi",
+      "version": "3.3.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "psycopg-pool",
+      "ecosystem": "pypi",
+      "version": "3.3.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "py-spy",
+      "ecosystem": "pypi",
+      "version": "0.4.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyarrow",
+      "ecosystem": "pypi",
+      "version": "26.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pybind11",
+      "ecosystem": "pypi",
+      "version": "3.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pydantic",
+      "ecosystem": "pypi",
+      "version": "2.14.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pydantic-settings",
+      "ecosystem": "pypi",
+      "version": "2.16.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pydeps",
+      "ecosystem": "pypi",
+      "version": "3.0.9",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pydocstyle",
+      "ecosystem": "pypi",
+      "version": "6.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyinstrument",
+      "ecosystem": "pypi",
+      "version": "5.1.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyjwt",
+      "ecosystem": "pypi",
+      "version": "2.15.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyperf",
+      "ecosystem": "pypi",
+      "version": "2.10.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyright",
+      "ecosystem": "pypi",
+      "version": "1.1.414",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest",
+      "ecosystem": "pypi",
+      "version": "9.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-asyncio",
+      "ecosystem": "pypi",
+      "version": "1.4.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-benchmark",
+      "ecosystem": "pypi",
+      "version": "5.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-cov",
+      "ecosystem": "pypi",
+      "version": "7.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-httpx",
+      "ecosystem": "pypi",
+      "version": "0.36.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-mock",
+      "ecosystem": "pypi",
+      "version": "3.17.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-randomly",
+      "ecosystem": "pypi",
+      "version": "5.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-run-parallel",
+      "ecosystem": "pypi",
+      "version": "0.10.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-socket",
+      "ecosystem": "pypi",
+      "version": "0.8.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-textual-snapshot",
+      "ecosystem": "pypi",
+      "version": "1.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytest-xdist",
+      "ecosystem": "pypi",
+      "version": "3.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "python-dotenv",
+      "ecosystem": "pypi",
+      "version": "1.2.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "python-json-logger",
+      "ecosystem": "pypi",
+      "version": "4.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pytz",
+      "ecosystem": "pypi",
+      "version": "2026.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyupgrade",
+      "ecosystem": "pypi",
+      "version": "3.22.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pywin32",
+      "ecosystem": "pypi",
+      "version": "312",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pyyaml",
+      "ecosystem": "pypi",
+      "version": "6.0.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "redis",
+      "ecosystem": "pypi",
+      "version": "8.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "regex",
+      "ecosystem": "pypi",
+      "version": "2026.9.29",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "requests",
+      "ecosystem": "pypi",
+      "version": "2.34.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "respx",
+      "ecosystem": "pypi",
+      "version": "0.23.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "rich",
+      "ecosystem": "pypi",
+      "version": "15.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "rq",
+      "ecosystem": "pypi",
+      "version": "3.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "ruamel.yaml",
+      "ecosystem": "pypi",
+      "version": "0.19.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "ruff",
+      "ecosystem": "pypi",
+      "version": "0.17.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "safetensors",
+      "ecosystem": "pypi",
+      "version": "0.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "scalene",
+      "ecosystem": "pypi",
+      "version": "2.4.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "scikit-build-core",
+      "ecosystem": "pypi",
+      "version": "1.1.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "scipy",
+      "ecosystem": "pypi",
+      "version": "1.18.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "selectolax",
+      "ecosystem": "pypi",
+      "version": "1.0.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "semgrep",
+      "ecosystem": "pypi",
+      "version": "1.183.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "setuptools",
+      "ecosystem": "pypi",
+      "version": "84.2.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "setuptools-scm",
+      "ecosystem": "pypi",
+      "version": "10.3.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "snakeviz",
+      "ecosystem": "pypi",
+      "version": "2.2.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "sortedcontainers",
+      "ecosystem": "pypi",
+      "version": "2.4.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "sphinx",
+      "ecosystem": "pypi",
+      "version": "9.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "sphinx-autodoc-typehints",
+      "ecosystem": "pypi",
+      "version": "3.17.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "sphinx-rtd-theme",
+      "ecosystem": "pypi",
+      "version": "3.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "sqlalchemy",
+      "ecosystem": "pypi",
+      "version": "2.1.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "stamina",
+      "ecosystem": "pypi",
+      "version": "26.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "starlette",
+      "ecosystem": "pypi",
+      "version": "1.10.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "structlog",
+      "ecosystem": "pypi",
+      "version": "26.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "syrupy",
+      "ecosystem": "pypi",
+      "version": "6.1.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tenacity",
+      "ecosystem": "pypi",
+      "version": "9.2.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "textual",
+      "ecosystem": "pypi",
+      "version": "8.2.8",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "textual-dev",
+      "ecosystem": "pypi",
+      "version": "1.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "time-machine",
+      "ecosystem": "pypi",
+      "version": "3.6.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tomli",
+      "ecosystem": "pypi",
+      "version": "2.5.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tomli-w",
+      "ecosystem": "pypi",
+      "version": "1.2.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tomlkit",
+      "ecosystem": "pypi",
+      "version": "0.15.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "torch",
+      "ecosystem": "pypi",
+      "version": "2.15.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "torchaudio",
+      "ecosystem": "pypi",
+      "version": "2.11.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "torchvision",
+      "ecosystem": "pypi",
+      "version": "0.29.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "towncrier",
+      "ecosystem": "pypi",
+      "version": "26.9.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tox",
+      "ecosystem": "pypi",
+      "version": "4.67.5",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "tox-uv",
+      "ecosystem": "pypi",
+      "version": "1.37.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "transformers",
+      "ecosystem": "pypi",
+      "version": "5.22.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "trio",
+      "ecosystem": "pypi",
+      "version": "0.34.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "triton",
+      "ecosystem": "pypi",
+      "version": "3.9.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "truststore",
+      "ecosystem": "pypi",
+      "version": "0.10.5",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "twine",
+      "ecosystem": "pypi",
+      "version": "7.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "ty",
+      "ecosystem": "pypi",
+      "version": "0.0.95",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "typer",
+      "ecosystem": "pypi",
+      "version": "0.27.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "types-pyyaml",
+      "ecosystem": "pypi",
+      "version": "6.0.12.20261030",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "types-requests",
+      "ecosystem": "pypi",
+      "version": "2.33.0.20261030",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "typing-extensions",
+      "ecosystem": "pypi",
+      "version": "4.16.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "tzdata",
+      "ecosystem": "pypi",
+      "version": "2026.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "urllib3",
+      "ecosystem": "pypi",
+      "version": "2.8.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "uv",
+      "ecosystem": "pypi",
+      "version": "0.13.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "uv-build",
+      "ecosystem": "pypi",
+      "version": "0.13.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "uvicorn",
+      "ecosystem": "pypi",
+      "version": "0.54.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "vermin",
+      "ecosystem": "pypi",
+      "version": "1.9.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "virtualenv",
+      "ecosystem": "pypi",
+      "version": "21.15.2",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "vllm",
+      "ecosystem": "pypi",
+      "version": "0.32.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "watchdog",
+      "ecosystem": "pypi",
+      "version": "7.0.0",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "watchfiles",
+      "ecosystem": "pypi",
+      "version": "1.3.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "wcwidth",
+      "ecosystem": "pypi",
+      "version": "0.9.4",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "websockets",
+      "ecosystem": "pypi",
+      "version": "17.4",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "wheel",
+      "ecosystem": "pypi",
+      "version": "0.48.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "whenever",
+      "ecosystem": "pypi",
+      "version": "0.11.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "xformers",
+      "ecosystem": "pypi",
+      "version": "0.0.35",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "zensical",
+      "ecosystem": "pypi",
+      "version": "0.0.74",
+      "checked": "2026-10-31"
+    },
+    {
+      "name": "pyo3",
+      "ecosystem": "crates",
+      "version": "0.30.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "actions/cache",
+      "ecosystem": "github",
+      "version": "v6.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "actions/checkout",
+      "ecosystem": "github",
+      "version": "v7.0.1",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "actions/download-artifact",
+      "ecosystem": "github",
+      "version": "v8.0.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "actions/upload-artifact",
+      "ecosystem": "github",
+      "version": "v7.0.2",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "astral-sh/ruff-pre-commit",
+      "ecosystem": "github",
+      "version": "v0.17.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "astral-sh/setup-uv",
+      "ecosystem": "github",
+      "version": "v10.3.3",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "astral-sh/uv-pre-commit",
+      "ecosystem": "github",
+      "version": "0.13.6",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "j178/prek-action",
+      "ecosystem": "github",
+      "version": "v3.1.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pre-commit/pre-commit-hooks",
+      "ecosystem": "github",
+      "version": "v6.0.0",
+      "checked": "2026-10-30"
+    },
+    {
+      "name": "pypa/gh-action-pypi-publish",
+      "ecosystem": "github",
+      "version": "v1.14.3",
+      "checked": "2026-10-30"
+    }
+  ],
+  "runtimes": [
+    {
+      "name": "cpython",
+      "version": "3.15.2",
+      "supported": "3.11 to 3.15",
+      "checked": "2026-10-30",
+      "source": "https://www.python.org/downloads/"
+    }
+  ]
+}
