@@ -34,7 +34,8 @@
       "name": "anyio",
       "ecosystem": "pypi",
       "version": "4.15.1",
-      "checked": "2026-10-30"
+      "checked": "2026-10-30",
+      "held": "4.16.0 came out on 2026-11-01, after this version's text was built and tested; the skills move in the next version."
     },
     {
       "name": "argon2-cffi",
@@ -1198,7 +1199,8 @@
       "name": "trio",
       "ecosystem": "pypi",
       "version": "0.34.0",
-      "checked": "2026-10-30"
+      "checked": "2026-10-30",
+      "held": "0.35.0 came out on 2026-10-31, after this version's text was built and tested; the skills teach 0.34 and move in the next version."
     },
     {
       "name": "triton",
